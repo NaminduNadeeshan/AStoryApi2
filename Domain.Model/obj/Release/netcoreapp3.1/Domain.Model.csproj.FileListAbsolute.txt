@@ -1,0 +1,9 @@
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.deps.json
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.csprojAssemblyReference.cache
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.AssemblyInfoInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.AssemblyInfo.cs
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.csproj.CoreCompileInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.pdb

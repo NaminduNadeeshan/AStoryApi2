@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {}
+  },
+  "projects": {
+    "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj",
+        "projectName": "Domain.Model",
+        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj",
+        "packagesPath": "/Users/namindu/.nuget/packages/",
+        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+        "projectName": "Dto.Model",
+        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+        "packagesPath": "/Users/namindu/.nuget/packages/",
+        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
+                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Repository.deps.json
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Repository.dll
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Repository.pdb
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Data.Entity.dll
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Data.Entity.pdb
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.csprojAssemblyReference.cache
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.AssemblyInfoInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.AssemblyInfo.cs
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.csproj.CoreCompileInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.csproj.CopyComplete
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.dll
+/Users/namindu/Projects/AStoryApiNew/Repository/obj/Release/netcoreapp3.1/Repository.pdb
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Dto.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Repository/bin/Release/netcoreapp3.1/Dto.Model.pdb

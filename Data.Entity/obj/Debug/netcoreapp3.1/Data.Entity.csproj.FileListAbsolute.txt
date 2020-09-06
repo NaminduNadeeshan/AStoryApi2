@@ -1,0 +1,17 @@
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Data.Entity.deps.json
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Data.Entity.runtimeconfig.json
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Data.Entity.runtimeconfig.dev.json
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Data.Entity.dll
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Data.Entity.pdb
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.csprojAssemblyReference.cache
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.AssemblyInfoInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.AssemblyInfo.cs
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.csproj.CoreCompileInputs.cache
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.dll
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.pdb
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.genruntimeconfig.cache
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Dto.Model.dll
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Dto.Model.pdb
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/bin/Debug/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/Debug/netcoreapp3.1/Data.Entity.csproj.CopyComplete

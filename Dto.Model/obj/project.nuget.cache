@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+2pTTuH2uKxs2XpUxlxvk0nukHqyKDW2kKPxfvlJj6kyQBhMHL7XarIaxGXrgEA7IR/AvAuVrYTUi6So2HcfeQ==",
+  "success": true,
+  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+  "expectedPackageFiles": [
+    "/Users/namindu/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
