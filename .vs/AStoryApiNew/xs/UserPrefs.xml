@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{427175D5-A6EC-4990-94A0-15A9773678AF}|AStoryApiNew">
+  <MonoDevelop.Ide.ItemProperties.AStoryApiNew PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AStoryApiNew/Startup.cs">
+    <Files>
+      <File FileName="AStoryApiNew/Startup.cs" Line="105" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AStoryApiNew" expanded="True">
+            <Node name="AStoryApiNew" expanded="True">
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

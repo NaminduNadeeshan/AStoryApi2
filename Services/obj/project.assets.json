@@ -5286,17 +5286,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj",
+      "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj",
       "projectName": "Services",
-      "projectPath": "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj",
+      "projectPath": "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj",
       "packagesPath": "/Users/namindu/.nuget/packages/",
-      "outputPath": "/Users/namindu/Projects/AStoryApiNew/Services/obj/",
+      "outputPath": "/Users/namindu/Desktop/AStoryApi2/Services/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/namindu/.nuget/NuGet/NuGet.Config"
+        "/Users/namindu/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5307,14 +5307,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-              "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+            "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+              "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
             },
-            "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
-              "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj"
+            "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj": {
+              "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj"
             },
-            "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj": {
-              "projectPath": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj"
+            "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj": {
+              "projectPath": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj"
             }
           }
         }

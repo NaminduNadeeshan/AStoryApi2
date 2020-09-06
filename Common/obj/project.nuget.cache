@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+r0K0rIQSD01iK6N9rULGwn4t3kGv86YSiLCFwmn6cQRSeBiGDgzT0+Wbn9rChGQdJabLQWalD61lkllTtgiuA==",
+  "dgSpecHash": "N5esPgHn3Rd4ioE1oCKP1hTU+LBUz3ZNpBf6ikZEyDC9n33sw6UyMprGsLz3YLu4fyl5wNQaddjLYNvgpTva3Q==",
   "success": true,
-  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj",
+  "projectFilePath": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

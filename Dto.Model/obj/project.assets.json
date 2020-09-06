@@ -74,17 +74,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+      "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj",
       "projectName": "Dto.Model",
-      "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+      "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj",
       "packagesPath": "/Users/namindu/.nuget/packages/",
-      "outputPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/obj/",
+      "outputPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/namindu/.nuget/NuGet/NuGet.Config"
+        "/Users/namindu/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -95,8 +95,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-              "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+            "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+              "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
             }
           }
         }

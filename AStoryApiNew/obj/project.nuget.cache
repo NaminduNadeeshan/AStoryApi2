@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rrD+JSW6p0tlUafozQ8z2rZY4ISG1MuFxQcOJv/7lMGETnWYcajrTDbsDKpgsMg69RIf/iUB7OAyLE+TfL04ng==",
+  "dgSpecHash": "rw+LiCxxW14iAoC7AbvmfW5Jc2is7xq8Cm1BDGLObdC3DHF82k3M8QGRyon4GxyQGSZ6x9SY90jHR6NTGHsv9A==",
   "success": true,
-  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/AStoryApiNew.csproj",
+  "projectFilePath": "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/AStoryApiNew.csproj",
   "expectedPackageFiles": [
     "/Users/namindu/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.7/microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "/Users/namindu/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

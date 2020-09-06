@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X7bv770u/ovFZ+7vQc/OIW9zViv/aj9OKx3f84XGeh/afPYNaf0dh9w4zs3yix29X81RdRMYD2/c9+16/gMDdw==",
+  "dgSpecHash": "aFB9vM65HV+sbHgFkqGRbVDqgrwiUwvVYNSag9V3xzlN7TIvNDSiW+baV6+gtpi2IyU7UkkitFOE7/P2Z9citw==",
   "success": true,
-  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj",
+  "projectFilePath": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj",
   "expectedPackageFiles": [
     "/Users/namindu/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/namindu/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

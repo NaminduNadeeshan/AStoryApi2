@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uWlqoUK1kLEXEpblWXEe3figcehzFW5ANWN0J1vnDdE5yERwBQou4SGH5yzYTaskik4UgTfFD89FM7Qwhn1A0A==",
+  "dgSpecHash": "xglNr9yLMOZ6e9m5RHJ2tG6syYRWoELuZby/CKtTMw7IXav5oX340lA+gLCHuFScYVDkvwmMaP9kllRhhu3hEw==",
   "success": true,
-  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj",
+  "projectFilePath": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj",
   "expectedPackageFiles": [
     "/Users/namindu/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/namindu/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

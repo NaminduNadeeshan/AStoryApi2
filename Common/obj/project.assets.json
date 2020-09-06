@@ -14,17 +14,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj",
+      "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj",
       "projectName": "Common",
-      "projectPath": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj",
+      "projectPath": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj",
       "packagesPath": "/Users/namindu/.nuget/packages/",
-      "outputPath": "/Users/namindu/Projects/AStoryApiNew/Common/obj/",
+      "outputPath": "/Users/namindu/Desktop/AStoryApi2/Common/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/namindu/.nuget/NuGet/NuGet.Config"
+        "/Users/namindu/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

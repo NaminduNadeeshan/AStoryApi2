@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+2pTTuH2uKxs2XpUxlxvk0nukHqyKDW2kKPxfvlJj6kyQBhMHL7XarIaxGXrgEA7IR/AvAuVrYTUi6So2HcfeQ==",
+  "dgSpecHash": "EhGWhAbmWRyRtSsTQ2/T2yF/tR7jYX4dd+8Zezzh2b0o87ARJuM6vHoymiE2n2mx7UXulGFdal9gxH3cjHRETA==",
   "success": true,
-  "projectFilePath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+  "projectFilePath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj",
   "expectedPackageFiles": [
     "/Users/namindu/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
   ],

@@ -69,7 +69,7 @@ namespace AStoryApiNew
 
             RegisterRepos(services);
 
-            RegisterServie(services);
+            RegisterServies(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -102,7 +102,7 @@ namespace AStoryApiNew
             });
         }
 
-        protected virtual void RegisterServie(IServiceCollection service)
+        protected virtual void RegisterServies(IServiceCollection service)
         {
             service.AddTransient(typeof(IAuthentication), typeof(AuthenticationService));
             service.AddTransient(typeof(IErrorLogService), typeof(ErrorLogService));

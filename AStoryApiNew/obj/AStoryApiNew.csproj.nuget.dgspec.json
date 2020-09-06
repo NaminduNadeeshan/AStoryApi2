@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/AStoryApiNew.csproj": {}
+    "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/AStoryApiNew.csproj": {}
   },
   "projects": {
-    "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/AStoryApiNew.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/AStoryApiNew.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/AStoryApiNew.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/AStoryApiNew.csproj",
         "projectName": "AStoryApiNew",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/AStoryApiNew.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/AStoryApiNew.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/AStoryApiNew/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,23 +28,23 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj"
               }
             }
           }
@@ -107,20 +107,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj",
         "projectName": "Common",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Common/Common.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Common/Common.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Common/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -160,20 +160,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj",
         "projectName": "Data.Entity",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -184,8 +184,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj"
               }
             }
           }
@@ -237,20 +237,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj",
         "projectName": "Domain.Model",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -290,20 +290,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj",
         "projectName": "Dto.Model",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -314,8 +314,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
               }
             }
           }
@@ -353,20 +353,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Repository/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Repository/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -377,11 +377,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Data.Entity/Data.Entity.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Data.Entity/Data.Entity.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
               }
             }
           }
@@ -413,20 +413,20 @@
         }
       }
     },
-    "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj": {
+    "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj",
+        "projectUniqueName": "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj",
         "projectName": "Services",
-        "projectPath": "/Users/namindu/Projects/AStoryApiNew/Services/Services.csproj",
+        "projectPath": "/Users/namindu/Desktop/AStoryApi2/Services/Services.csproj",
         "packagesPath": "/Users/namindu/.nuget/packages/",
-        "outputPath": "/Users/namindu/Projects/AStoryApiNew/Services/obj/",
+        "outputPath": "/Users/namindu/Desktop/AStoryApi2/Services/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/namindu/.nuget/NuGet/NuGet.Config"
+          "/Users/namindu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -437,14 +437,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Domain.Model/Domain.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Domain.Model/Domain.Model.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Dto.Model/Dto.Model.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Dto.Model/Dto.Model.csproj"
               },
-              "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj": {
-                "projectPath": "/Users/namindu/Projects/AStoryApiNew/Repository/Repository.csproj"
+              "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj": {
+                "projectPath": "/Users/namindu/Desktop/AStoryApi2/Repository/Repository.csproj"
               }
             }
           }
