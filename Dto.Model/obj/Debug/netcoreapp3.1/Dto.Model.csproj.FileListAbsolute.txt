@@ -10,3 +10,15 @@
 /Users/namindu/Projects/AStoryApiNew/Dto.Model/bin/Debug/netcoreapp3.1/Domain.Model.dll
 /Users/namindu/Projects/AStoryApiNew/Dto.Model/bin/Debug/netcoreapp3.1/Domain.Model.pdb
 /Users/namindu/Projects/AStoryApiNew/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.csproj.CopyComplete
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/bin/Debug/netcoreapp3.1/Dto.Model.deps.json
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/bin/Debug/netcoreapp3.1/Dto.Model.dll
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/bin/Debug/netcoreapp3.1/Dto.Model.pdb
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/bin/Debug/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/bin/Debug/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.csprojAssemblyReference.cache
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.AssemblyInfoInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.AssemblyInfo.cs
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.csproj.CoreCompileInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.csproj.CopyComplete
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.dll
+/Users/namindu/Desktop/AStoryApi2/Dto.Model/obj/Debug/netcoreapp3.1/Dto.Model.pdb

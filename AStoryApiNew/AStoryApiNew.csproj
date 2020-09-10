@@ -15,12 +15,14 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\Authentication\" />
     <Folder Include="Common\" />
     <Folder Include="Controllers\Story\" />
     <Folder Include="Controllers\Episode\" />
+    <Folder Include="Controllers\Auther\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dto.Model\Dto.Model.csproj">

@@ -1,15 +1,44 @@
 ﻿<Properties StartupConfiguration="{427175D5-A6EC-4990-94A0-15A9773678AF}|AStoryApiNew">
   <MonoDevelop.Ide.ItemProperties.AStoryApiNew PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AStoryApiNew/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/AutherService/AutherService.cs">
     <Files>
-      <File FileName="AStoryApiNew/Startup.cs" Line="105" Column="47" />
+      <File FileName="Services/AutherService/AutherService.cs" Line="68" Column="37" />
+      <File FileName="Services/AutherService/IAutherService.cs" Line="6" Column="22" />
+      <File FileName="Services/EpisodeService/EpisodeService.cs" />
+      <File FileName="AStoryApiNew/Controllers/Auther/AutherController.cs" Line="45" Column="57" />
+      <File FileName="AStoryApiNew/Startup.cs" Line="111" Column="38" />
+      <File FileName="Repository/AutherRepository/AutherRepository.cs" Line="19" Column="85" />
+      <File FileName="Repository/AutherRepository/IAutherRepository.cs" Line="8" Column="67" />
+      <File FileName="Repository/EpisodeRepository/IEpisodeRepository.cs" />
+      <File FileName="Repository/StoryRepository/IStoryRepository.cs" />
+      <File FileName="Repository/StoryRepository/StoryRepository.cs" />
+      <File FileName="AStoryApiNew/Program.cs" Line="16" Column="1" />
+      <File FileName="AStoryApiNew/Controllers/Authentication/AuthenticationController.cs" Line="50" Column="41" />
+      <File FileName="Services/AuthenticationService/IAuthentication.cs" Line="14" Column="25" />
+      <File FileName="Repository/UserRepository/IUserRepository.cs" Line="10" Column="19" />
+      <File FileName="Repository/UserRepository/UserRepository.cs" Line="22" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AStoryApiNew" expanded="True">
             <Node name="AStoryApiNew" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="Authentication" expanded="True" />
+                <Node name="Auther" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Data.Entity" expanded="True" />
+            <Node name="Dto.Model" expanded="True" />
+            <Node name="Repository" expanded="True">
+              <Node name="UserRepository" expanded="True" />
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="AuthenticationService" expanded="True" />
+              <Node name="AutherService" expanded="True">
+                <Node name="AutherService.cs" selected="True" />
+              </Node>
+              <Node name="EpisodeService" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -19,7 +48,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/Controllers/Auther/AutherController.cs" relfile="AStoryApiNew/Controllers/Auther/AutherController.cs" line="40" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

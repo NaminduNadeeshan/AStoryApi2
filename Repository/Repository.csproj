@@ -9,6 +9,7 @@
     <Folder Include="UserRepository\" />
     <Folder Include="StoryRepository\" />
     <Folder Include="EpisodeRepository\" />
+    <Folder Include="AutherRepository\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data.Entity\Data.Entity.csproj" />

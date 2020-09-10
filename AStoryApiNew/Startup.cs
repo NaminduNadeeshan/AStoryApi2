@@ -25,6 +25,9 @@ using Microsoft.OpenApi.Models;
 using Repository.StoryRepository;
 using Services.StoryServices;
 using Services.EpisodeService;
+using AutoMapper;
+using Services.AutherService;
+using Repository.AutherRepository;
 
 namespace AStoryApiNew
 {
@@ -57,6 +60,8 @@ namespace AStoryApiNew
 
             services.Configure<Authentication>(Configuration.GetSection("Authentication"));
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddOptions();
 
             services.AddControllers();
@@ -88,6 +93,8 @@ namespace AStoryApiNew
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(options => options.WithOrigins("http://localhost:4200"));
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -95,6 +102,13 @@ namespace AStoryApiNew
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            //// global cors policy
+            //app.UseCors(x => x
+            //  .AllowAnyOrigin()
+            //  .AllowAnyMethod()
+            //  .AllowAnyHeader()
+            //  .AllowCredentials());
 
             app.UseEndpoints(endpoints =>
             {
@@ -108,6 +122,7 @@ namespace AStoryApiNew
             service.AddTransient(typeof(IErrorLogService), typeof(ErrorLogService));
             service.AddTransient(typeof(IStotyService), typeof(StoryService));
             service.AddTransient(typeof(IEpisodeService), typeof(EpisodeService));
+            service.AddTransient(typeof(IAutherService), typeof(AutherService));
         }
 
         public virtual void setDatabase(IServiceCollection services)
@@ -125,6 +140,7 @@ namespace AStoryApiNew
             services.AddScoped(typeof(IGenaricRepository<>), typeof(GenaricRepository<>));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
             services.AddScoped(typeof(IStoryRepository), typeof(StoryRepository));
+            services.AddScoped(typeof(IAutherRepository), typeof(AutherRepository));
         }
 
         protected virtual void SwaggerRegister(IServiceCollection services)

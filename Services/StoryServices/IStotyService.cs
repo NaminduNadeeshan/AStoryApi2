@@ -10,5 +10,6 @@ namespace Services.StoryServices
         List<AutherByStoriesDto> StoryByAuther(int id);
         List<StoryWithAutherDto> GetStoriesWithAuther(int skip, int take);
         List<EpisodeDtoBeforeSubscribe> GetEpisodesByStoryId(int storyId, int skip, int take);
+        SingleStoryDto EditStory(SingleStoryDto story);
     }
 }

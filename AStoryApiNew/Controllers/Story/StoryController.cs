@@ -52,15 +52,16 @@ namespace AStoryApiNew.Controllers.Story
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPost("Update")]
+        public IActionResult Update([FromBody] SingleStoryDto story)
         {
+            return Ok(_service.EditStory(story));
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

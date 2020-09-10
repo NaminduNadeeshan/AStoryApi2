@@ -7,3 +7,12 @@
 /Users/namindu/Projects/AStoryApiNew/Common/obj/Release/netcoreapp3.1/Common.dll
 /Users/namindu/Projects/AStoryApiNew/Common/obj/Release/netcoreapp3.1/Common.pdb
 /Users/namindu/Projects/AStoryApiNew/Common/obj/Release/netcoreapp3.1/Common.csprojAssemblyReference.cache
+/Users/namindu/Desktop/AStoryApi2/Common/bin/Release/netcoreapp3.1/Common.deps.json
+/Users/namindu/Desktop/AStoryApi2/Common/bin/Release/netcoreapp3.1/Common.dll
+/Users/namindu/Desktop/AStoryApi2/Common/bin/Release/netcoreapp3.1/Common.pdb
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.csprojAssemblyReference.cache
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.AssemblyInfoInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.AssemblyInfo.cs
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.csproj.CoreCompileInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.dll
+/Users/namindu/Desktop/AStoryApi2/Common/obj/Release/netcoreapp3.1/Common.pdb

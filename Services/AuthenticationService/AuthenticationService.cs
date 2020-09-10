@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Data.Entity;
 using Domain.Model.ErrorLog.Model;
 using Dto.Model;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -89,25 +90,50 @@ namespace Services.AuthenticationService
 
         public UserDto SocialLogin(UserDto user)
         {
-            try
+
+            var existingUser = _userDiffRepo.GetUserByEmail(user.Email);
+
+            if (!existingUser.Any())
             {
-                var userToDb = new User
+
+                try
                 {
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    PhoneNumber = user.PhoneNumber,
-                    ProfileImageUrl = user.ProfileImageUrl,
-                    UserAppId = user.UserId,
-                    UserType = user.UserType
-                };
-                _userRepo.Insert(userToDb);
-                return user;
-            } catch (Exception e)
+                    var userToDb = new User
+                    {
+                        Email = user.Email,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        PhoneNumber = user.PhoneNumber,
+                        ProfileImageUrl = user.ProfileImageUrl,
+                        UserAppId = user.UserId,
+                        UserType = user.UserType
+                    };
+                    _userRepo.Insert(userToDb);
+                    return user;
+                }
+                catch (Exception e)
+                {
+                    _errorService.logErrorToServer(new ErrorLog { ErrorFile = "AuthenticationService", errorException = e.ToString(), ErrorFunction = "SocialLogin" });
+                    throw e;
+                }
+            } else
             {
-                _errorService.logErrorToServer(new ErrorLog { ErrorFile = "AuthenticationService", errorException = e.ToString(), ErrorFunction = "SocialLogin" });
-                throw e;
+                var returnUser = new UserDto { };
+                foreach(User users in existingUser)
+                {
+                    returnUser = new UserDto
+                    {
+                        Email = users.Email,
+                        FirstName = users.FirstName,
+                        LastName = users.LastName,
+                        PhoneNumber = users.PhoneNumber,
+                        ProfileImageUrl = user.ProfileImageUrl,
+                        UserId = user.UserId,
+                    };
+                }
             }
+
+
         }
 
         private async Task<UserDto> CallFirbaseSignup(FirebaseSignupRequest user, string userType)

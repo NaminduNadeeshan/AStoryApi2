@@ -69,7 +69,7 @@ namespace Repository.CommonRepository
             {
                 _table.Attach(item);
                 _context.Entry(item).State = EntityState.Modified;
-
+                Save();
                 return item;
             }
             catch (Exception e)
