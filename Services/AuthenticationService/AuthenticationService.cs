@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Data.Entity;
 using Domain.Model.ErrorLog.Model;
 using Dto.Model;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -30,7 +32,7 @@ namespace Services.AuthenticationService
             _userDiffRepo = userDiffRepo;
         }
 
-        public UserDto SignInUser(AuthenticationDto user)
+        public List<UserDto> SignInUser(AuthenticationDto user)
         {
             try
             {
@@ -89,25 +91,53 @@ namespace Services.AuthenticationService
 
         public UserDto SocialLogin(UserDto user)
         {
-            try
+
+            var existingUser = _userDiffRepo.GetUserByEmail(user.Email);
+
+            if (!existingUser.Any())
             {
-                var userToDb = new User
+
+                try
                 {
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    PhoneNumber = user.PhoneNumber,
-                    ProfileImageUrl = user.ProfileImageUrl,
-                    UserAppId = user.UserId,
-                    UserType = user.UserType
-                };
-                _userRepo.Insert(userToDb);
-                return user;
-            } catch (Exception e)
-            {
-                _errorService.logErrorToServer(new ErrorLog { ErrorFile = "AuthenticationService", errorException = e.ToString(), ErrorFunction = "SocialLogin" });
-                throw e;
+                    var userToDb = new User
+                    {
+                        Email = user.Email,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        PhoneNumber = user.PhoneNumber,
+                        ProfileImageUrl = user.ProfileImageUrl,
+                        UserAppId = user.UserId,
+                        UserType = user.UserType
+                    };
+                    _userRepo.Insert(userToDb);
+                    return user;
+                }
+                catch (Exception e)
+                {
+                    _errorService.logErrorToServer(new ErrorLog { ErrorFile = "AuthenticationService", errorException = e.ToString(), ErrorFunction = "SocialLogin" });
+                    throw e;
+                }
             }
+            else
+            {
+                var returnUser = new UserDto { };
+                foreach (User users in existingUser)
+                {
+                    returnUser = new UserDto
+                    {
+                        Email = users.Email,
+                        FirstName = users.FirstName,
+                        LastName = users.LastName,
+                        PhoneNumber = users.PhoneNumber,
+                        ProfileImageUrl = user.ProfileImageUrl,
+                        UserId = user.UserId,
+                    };
+                }
+
+                return returnUser;
+            }
+
+
         }
 
         private async Task<UserDto> CallFirbaseSignup(FirebaseSignupRequest user, string userType)
@@ -165,7 +195,7 @@ namespace Services.AuthenticationService
             }
         }
 
-        private async Task<UserDto> CallFireBaseToSignIn(FirebaseSignupRequest user)
+        private async Task<List<UserDto>> CallFireBaseToSignIn(FirebaseSignupRequest user)
         {
             string signUpUrl = $"{_authencationsSettings.Value.SignInUrl}{_authencationsSettings.Value.FirebaseApiKey}";
 
@@ -179,11 +209,13 @@ namespace Services.AuthenticationService
                 if (!result.IsSuccessStatusCode)
                 {
                     JObject error = JObject.Parse(result.Content.ReadAsStringAsync().Result);
-
-                    return new UserDto
+                    var newList = new List<UserDto>();
+                    var ss = new UserDto
                     {
                         error = error.SelectToken("error.message").ToString()
                     };
+                    newList.Add(ss);
+                    return newList;
                 }
                 else
                 {
@@ -193,21 +225,30 @@ namespace Services.AuthenticationService
                     //TODO: Create a new DTO for the expose outside from api for usersDeteils.
                     var signedUser = RetriveSignInUserDetails(value.email);
 
-                    var returnedUser = new UserDto
-                    {
-                        Email = signedUser.Email,
-                        expiresIn = value.expiresIn,
-                        FirstName = signedUser.FirstName,
-                        LastName = signedUser.LastName,
-                        PhoneNumber = signedUser.PhoneNumber,
-                        refreshToken = value.refreshToken,
-                        ProfileImageUrl = signedUser.ProfileImageUrl,
-                        UserType = signedUser.UserType,
-                        UserId = signedUser.UserId.ToString(),
-                        accessToken = value.idToken
-                    };
+                    var newList = new List<UserDto>();
 
-                    return returnedUser;
+                    foreach(User u in signedUser)
+                    {
+                        var returnedUser = new UserDto
+                        {
+                            Email = u.Email,
+                            expiresIn = value.expiresIn,
+                            FirstName = u.FirstName,
+                            LastName = u.LastName,
+                            PhoneNumber = u.PhoneNumber,
+                            refreshToken = value.refreshToken,
+                            ProfileImageUrl = u.ProfileImageUrl,
+                            UserType = u.UserType,
+                            UserId = u.UserId.ToString(),
+                            accessToken = value.idToken
+                        };
+
+                        newList.Add(returnedUser);
+                    }
+
+                    
+
+                    return newList;
                 }
             }
         }
@@ -244,7 +285,7 @@ namespace Services.AuthenticationService
 
         }
 
-        private User RetriveSignInUserDetails(string email)
+        private List<User> RetriveSignInUserDetails(string email)
         {
             return _userDiffRepo.GetUserByEmail(email);
         }

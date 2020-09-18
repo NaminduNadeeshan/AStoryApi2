@@ -7,3 +7,12 @@
 /Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.csproj.CoreCompileInputs.cache
 /Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.dll
 /Users/namindu/Projects/AStoryApiNew/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.deps.json
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/bin/Release/netcoreapp3.1/Domain.Model.pdb
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.csprojAssemblyReference.cache
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.AssemblyInfoInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.AssemblyInfo.cs
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.csproj.CoreCompileInputs.cache
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.dll
+/Users/namindu/Desktop/AStoryApi2/Domain.Model/obj/Release/netcoreapp3.1/Domain.Model.pdb

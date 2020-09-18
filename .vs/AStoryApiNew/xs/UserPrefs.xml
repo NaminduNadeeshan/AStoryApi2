@@ -1,15 +1,30 @@
 ﻿<Properties StartupConfiguration="{427175D5-A6EC-4990-94A0-15A9773678AF}|AStoryApiNew">
   <MonoDevelop.Ide.ItemProperties.AStoryApiNew PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AStoryApiNew/Startup.cs">
-    <Files>
-      <File FileName="AStoryApiNew/Startup.cs" Line="105" Column="47" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AStoryApiNew" expanded="True">
             <Node name="AStoryApiNew" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="Authentication" expanded="True" />
+                <Node name="Auther" expanded="True" />
+                <Node name="Story" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Data.Entity" expanded="True" />
+            <Node name="Dto.Model" expanded="True" />
+            <Node name="Repository" expanded="True">
+              <Node name="StoryRepository" expanded="True">
+                <Node name="StoryRepository.cs" selected="True" />
+              </Node>
+              <Node name="UserRepository" expanded="True" />
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="AuthenticationService" expanded="True" />
+              <Node name="AutherService" expanded="True" />
+              <Node name="EpisodeService" expanded="True" />
+              <Node name="StoryServices" expanded="True" />
             </Node>
           </Node>
         </State>

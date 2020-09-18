@@ -1,0 +1,5 @@
+{
+    "jira-plugin.workingProject": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/3abbaa14-a622-4d19-b43f-e3aa98ba319f/resourceGroups/AStory/providers/Microsoft.Web/sites/astory",
+    "appService.deploySubpath": "bin/Release/netcoreapp3.1"
+}

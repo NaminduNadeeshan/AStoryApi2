@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AutoMapper;
 using Data.Entity;
 using Dto.Model;
 using Repository.CommonRepository;
@@ -51,6 +52,39 @@ namespace Services.StoryServices
             }
         }
 
+        public SingleStoryDto EditStory(SingleStoryDto story)
+        {
+            try
+            {
+                var storyE = new Story
+                {
+                    autherId = story.autherId,
+                    coverImageUrl = story.coverImageUrl,
+                    isActive = story.isActive,
+                    storyId = story.storyId,
+                    storyName = story.storyName,
+                    storyShortDescription = story.storyShortDescription
+                };
+
+                var responseStory = _commonStoryContext.Update(storyE);
+
+                var returnStory = new SingleStoryDto
+                {
+                    autherId = responseStory.autherId,
+                    coverImageUrl = responseStory.coverImageUrl,
+                    isActive = responseStory.isActive,
+                    storyId = responseStory.storyId,
+                    storyName = responseStory.storyName,
+                    storyShortDescription = responseStory.storyShortDescription,
+                };
+                return returnStory;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         public List<EpisodeDtoBeforeSubscribe> GetEpisodesByStoryId(int storyId, int skip, int take)
         {
             return _stotyRepo.GetEpisodesByStoryId(storyId, skip, take);
@@ -65,7 +99,7 @@ namespace Services.StoryServices
         public List<AutherByStoriesDto> StoryByAuther(int id)
         {
             return _stotyRepo.GetPostByAutherId(id); ;
-            
+
         }
     }
 }

@@ -18,9 +18,11 @@ namespace Data.Entity
 
         public string PhoneNumber { get; set; }
 
-        public string  Address { get; set; }
+        public string Address { get; set; }
 
-        public  AutherBankDetails BankDetails { set; get; }
+        public string Email { get; set; }
+
+        public virtual AutherBankDetails BankDetails { set; get; }
 
         public virtual ICollection<Story> stories { get; set; }
 
