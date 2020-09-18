@@ -32,7 +32,7 @@ namespace AStoryApiNew.Controllers
         public IActionResult SignIn(int id, [FromBody] AuthenticationDto user)
         {
             var response = _service.SignInUser(user);
-            return (response.error != null) ? (IActionResult)BadRequest(response) : (IActionResult)Ok(response);
+            return (response?[0].error != null) ? (IActionResult)BadRequest(response) : (IActionResult)Ok(response);
         }
 
         

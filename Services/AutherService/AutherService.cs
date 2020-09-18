@@ -68,5 +68,34 @@ namespace Services.AutherService
                 return returnObject;
             }
         }
+
+        public AutherDto EditAuther(AutherDto auther)
+        {
+            var autherEntity = new Auther
+            {
+                Address = auther.Address,
+                AutherId = auther.AutherId,
+                Email = auther.Email,
+                FirstName = auther.FirstName,
+                LastName = auther.LastName,
+                PhoneNumber = auther.PhoneNumber,
+                ProfilePictureUrl = auther.ProfilePictureUrl
+            };
+
+            var responseAuther = _autherRepository.Update(autherEntity);
+
+            var returnAutherDto = new AutherDto
+            {
+                Address = responseAuther.Address,
+                AutherId = responseAuther.AutherId,
+                Email = responseAuther.Email,
+                FirstName = responseAuther.FirstName,
+                LastName = responseAuther.LastName,
+                PhoneNumber = responseAuther.PhoneNumber,
+                ProfilePictureUrl = responseAuther.ProfilePictureUrl
+            };
+
+            return returnAutherDto;
+        }
     }
 }

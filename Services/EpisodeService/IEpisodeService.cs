@@ -5,6 +5,6 @@ namespace Services.EpisodeService
 {
     public interface IEpisodeService
     {
-        public EpisodeDto AddEpisode(EpisodeDto episode);
+        EpisodeDto AddEpisode(EpisodeDto episode);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Dto.Model;
 
 namespace Services.AuthenticationService
@@ -7,7 +8,7 @@ namespace Services.AuthenticationService
     {
         UserDto SignUpUser(AuthenticationDto user);
 
-        UserDto SignInUser(AuthenticationDto user);
+        List<UserDto> SignInUser(AuthenticationDto user);
 
         FirebaseIdTokenResponse getIdTokenByRefreshToken(FirebaseIdTokenRequest token);
 
