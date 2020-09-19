@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Entity.Migrations
 {
     [DbContext(typeof(AStoryDatabaseContext))]
-    [Migration("20200909113058_8888ssssddssss467sdd")]
-    partial class _8888ssssddssss467sdd
+    [Migration("20200919071723_isSuperAutgersxzcsdxxddsdfdv")]
+    partial class isSuperAutgersxzcsdxxddsdfdv
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.7")
+                .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -45,6 +45,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SuperAuther")
+                        .HasColumnType("bit");
 
                     b.HasKey("AutherId");
 
@@ -96,6 +99,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("episodeShortDescription")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("storyId")
                         .HasColumnType("int");

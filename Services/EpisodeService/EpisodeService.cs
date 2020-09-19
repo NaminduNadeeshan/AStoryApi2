@@ -2,15 +2,19 @@
 using Data.Entity;
 using Dto.Model;
 using Repository.CommonRepository;
+using Repository.EpisodeRepository;
 
 namespace Services.EpisodeService
 {
     public class EpisodeService: IEpisodeService
     {
         private readonly IGenaricRepository<Episode> _commonContext;
-        public EpisodeService(IGenaricRepository<Episode> commonContext)
+        private readonly IEpisodeRepository _episodeRepository;
+
+        public EpisodeService(IGenaricRepository<Episode> commonContext, IEpisodeRepository episodeRepository)
         {
             _commonContext = commonContext;
+            _episodeRepository = episodeRepository;
         }
 
         public EpisodeDto AddEpisode(EpisodeDto episode)
@@ -21,7 +25,8 @@ namespace Services.EpisodeService
                 episodeCoverImageUrl = episode.episodeCoverImageUrl,
                 episodeName = episode.episodeName,
                 episodeShortDescription = episode.episodeShortDescription,
-                storyId = episode.storyId
+                storyId = episode.storyId,
+                isActive = false
             };
 
             var entityToDto = _commonContext.Insert(episodeToEntity);
@@ -37,6 +42,11 @@ namespace Services.EpisodeService
             };
 
             return dto;
+        }
+
+        public StoryApprovedResponse Approve(StoryApproveRequestDto approve)
+        {
+            return _episodeRepository.ApproveRepository(approve);
         }
     }
 }

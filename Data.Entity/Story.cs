@@ -17,7 +17,7 @@ namespace Data.Entity
 
         public string coverImageUrl { get; set; }
 
-        public Boolean isActive { get; set; }
+        public bool isActive { get; set; }
 
         public Auther auther { get; set; }
 

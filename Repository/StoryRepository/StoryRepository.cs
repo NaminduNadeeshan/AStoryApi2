@@ -17,9 +17,45 @@ namespace Repository.StoryRepository
             _context = context;
         }
 
+        public StoryApprovedResponse ApproveRepository(StoryApproveRequestDto request)
+        {
+            try
+            {
+                var storyData = GetById(request.propertyId);
+
+                if (storyData != null)
+                {
+                    storyData.isActive = request.value;
+
+                    Update(storyData);
+
+                    return new StoryApprovedResponse
+                    {
+                        isSuccess = true,
+                    };
+                } else
+                {
+                    return new StoryApprovedResponse
+                    {
+                        isSuccess = false,
+                    };
+                }
+                
+
+                
+            }
+            catch (Exception e)
+            {
+                return new StoryApprovedResponse
+                {
+                    isSuccess = false,
+                };
+            }
+        }
+
         public List<EpisodeDtoBeforeSubscribe> GetEpisodesByStoryId(int storyId, int skip, int take)
         {
-            var episodeList = _context.Episode.Where<Episode>(episode => episode.storyId == storyId).Skip(skip).Take(take).ToList();
+            var episodeList = _context.Episode.Where<Episode>(episode => episode.storyId == storyId && episode.isActive == true).Skip(skip).Take(take).ToList();
 
             var episodeDtoList = new List<EpisodeDtoBeforeSubscribe>();
 
@@ -32,22 +68,26 @@ namespace Repository.StoryRepository
                     episodeId = episode.episodeId,
                     episodeName = episode.episodeName,
                     episodeShortDescription = episode.episodeShortDescription,
+                    isActive = episode.isActive,
                     storyId = episode.storyId
                 };
 
                 episodeDtoList.Add(episodeDto);
             }
-      
+
 
 
             return episodeDtoList;
         }
 
-        public List<AutherByStoriesDto> GetPostByAutherId(int autherId)
+        public List<AutherByStoriesDto> GetPostByAutherId(int autherId, int skip, int take)
         {
             try
             {
+
                 var autherByStories = _context.Authers.Where<Auther>(auther => auther.AutherId == autherId).Include(auther => auther.stories).ToList();
+
+
 
                 var storiesList = new List<SingleStoryDto>();
                 var autherLiast = new List<AutherByStoriesDto>();
@@ -59,10 +99,10 @@ namespace Repository.StoryRepository
                         {
                             coverImageUrl = stories.coverImageUrl,
                             autherId = stories.autherId,
-                            isActive = stories.isActive,
                             storyId = stories.storyId,
                             storyName = stories.storyName,
                             storyShortDescription = stories.storyShortDescription,
+                            isActive = stories.isActive
 
                         };
 
@@ -82,6 +122,8 @@ namespace Repository.StoryRepository
 
                     autherLiast.Add(storiesByAuthers);
                 }
+
+
                 return autherLiast;
             }
             catch (Exception e)
@@ -92,7 +134,7 @@ namespace Repository.StoryRepository
 
         public List<StoryWithAutherDto> GetStoriesWithAuther(int skip, int take)
         {
-            var postList = _context.Story.Skip(skip).Take(take).Include(story => story.auther).ToList();
+            var postList = _context.Story.Where<Story>(story => story.isActive == true).Include(story => story.auther).Skip(skip).Take(take).ToList();
 
             var storyWithAutherdtoList = new List<StoryWithAutherDto>();
 
@@ -112,6 +154,7 @@ namespace Repository.StoryRepository
                     autherDetails = autherDeteails,
                     storyName = list.storyName,
                     storyId = list.storyId,
+                    isActive = list.isActive,
                     storyShortDescription = list.storyShortDescription
 
                 };

@@ -15,7 +15,7 @@ namespace Data.Entity.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.7")
+                .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -43,6 +43,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SuperAuther")
+                        .HasColumnType("bit");
 
                     b.HasKey("AutherId");
 
@@ -94,6 +97,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("episodeShortDescription")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("storyId")
                         .HasColumnType("int");

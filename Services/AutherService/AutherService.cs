@@ -21,6 +21,9 @@ namespace Services.AutherService
         {
 
             var existingUser = _autherRepository.AutherByEmail(auther.Email);
+
+            var isSuperUser = auther.Email == "namindu.sanchila@gmail.com" ? true : false;
+
             if (!existingUser.Any())
             {
                 var insertObject = new Auther
@@ -31,6 +34,7 @@ namespace Services.AutherService
                     FirstName = auther.FirstName,
                     LastName = auther.LastName,
                     PhoneNumber = auther.PhoneNumber,
+                    SuperAuther = isSuperUser,
                     ProfilePictureUrl = auther.ProfilePictureUrl,
                 };
 
@@ -44,6 +48,7 @@ namespace Services.AutherService
                     FirstName = responseObject.FirstName,
                     LastName = responseObject.LastName,
                     PhoneNumber = responseObject.PhoneNumber,
+                    isSuperAUther = responseObject.SuperAuther,
                     ProfilePictureUrl = responseObject.ProfilePictureUrl
                 };
 
@@ -61,6 +66,7 @@ namespace Services.AutherService
                         FirstName = authurs.FirstName,
                         LastName = authurs.LastName,
                         PhoneNumber = authurs.PhoneNumber,
+                        isSuperAUther = isSuperUser,
                         ProfilePictureUrl = authurs.ProfilePictureUrl
                     };
                 }

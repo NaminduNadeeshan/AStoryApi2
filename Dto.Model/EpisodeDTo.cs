@@ -30,6 +30,8 @@ namespace Dto.Model
 
         public string episodeCoverImageUrl { get; set; }
 
+        public bool isActive { get; set; }
+
         public int storyId { get; set; }
 
     }

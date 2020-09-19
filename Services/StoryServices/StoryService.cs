@@ -27,9 +27,10 @@ namespace Services.StoryServices
                 {
                     autherId = story.autherId,
                     coverImageUrl = story.coverImageUrl,
-                    isActive = story.isActive,
+                    isActive = false,
                     storyName = story.storyName,
-                    storyShortDescription = story.storyShortDescription
+                    storyShortDescription = story.storyShortDescription,
+
                 };
 
                 var responseStory = _commonStoryContext.Insert(insertableStory);
@@ -38,7 +39,6 @@ namespace Services.StoryServices
                 {
                     autherId = responseStory.autherId,
                     coverImageUrl = responseStory.coverImageUrl,
-                    isActive = responseStory.isActive,
                     storyId = responseStory.storyId,
                     storyName = responseStory.storyName,
                     storyShortDescription = responseStory.storyShortDescription
@@ -52,7 +52,13 @@ namespace Services.StoryServices
             }
         }
 
-        public SingleStoryDto EditStory(SingleStoryDto story)
+        public StoryApprovedResponse Approve(StoryApproveRequestDto approve)
+        {
+
+           return _stotyRepo.ApproveRepository(approve);
+        }
+
+        public SingleStoryDto EditStory(Story story)
         {
             try
             {
@@ -60,7 +66,6 @@ namespace Services.StoryServices
                 {
                     autherId = story.autherId,
                     coverImageUrl = story.coverImageUrl,
-                    isActive = story.isActive,
                     storyId = story.storyId,
                     storyName = story.storyName,
                     storyShortDescription = story.storyShortDescription
@@ -72,7 +77,6 @@ namespace Services.StoryServices
                 {
                     autherId = responseStory.autherId,
                     coverImageUrl = responseStory.coverImageUrl,
-                    isActive = responseStory.isActive,
                     storyId = responseStory.storyId,
                     storyName = responseStory.storyName,
                     storyShortDescription = responseStory.storyShortDescription,
@@ -83,6 +87,29 @@ namespace Services.StoryServices
             {
                 throw e;
             }
+        }
+
+        public List<SingleStoryDto> GetAllStories()
+        {
+            var allStories = _commonStoryContext.GetAll();
+            var allStoriesList = new List<SingleStoryDto>();
+
+            foreach( Story story in allStories)
+            {
+                var storyDto = new SingleStoryDto
+                {
+                    autherId = story.autherId,
+                    coverImageUrl = story.coverImageUrl,
+                    isActive = story.isActive,
+                    storyId = story.storyId,
+                    storyName =  story.storyName,
+                    storyShortDescription = story.storyShortDescription,
+                };
+
+                allStoriesList.Add(storyDto);
+            }
+
+            return allStoriesList;
         }
 
         public List<EpisodeDtoBeforeSubscribe> GetEpisodesByStoryId(int storyId, int skip, int take)
@@ -96,9 +123,9 @@ namespace Services.StoryServices
             return _stotyRepo.GetStoriesWithAuther(skip, take);
         }
 
-        public List<AutherByStoriesDto> StoryByAuther(int id)
+        public List<AutherByStoriesDto> StoryByAuther(int id, int skip, int take)
         {
-            return _stotyRepo.GetPostByAutherId(id); ;
+            return _stotyRepo.GetPostByAutherId(id, skip, take); ;
 
         }
     }

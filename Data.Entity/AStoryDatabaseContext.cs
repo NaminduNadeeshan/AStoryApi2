@@ -37,11 +37,6 @@ namespace Data.Entity
                 .WithMany(story => story.episodes)
                 .HasForeignKey(episode => episode.storyId);
 
-            //modelBuilder.Entity<Auther>()
-            //    .HasOne(auther => auther.BankDetails)
-            //    .WithOne(bank => bank.auther)
-            //    .HasForeignKey(auther => auther.AutherBankDetailId);
-
             modelBuilder.Entity<AutherBankDetails>()
                 .HasOne(bank => bank.auther)
                 .WithOne(auther => auther.BankDetails)

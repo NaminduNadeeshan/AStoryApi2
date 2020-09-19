@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Data.Entity
 {
     public class Auther
     {
+
         [Key]
         public int AutherId { get; set; }
 
@@ -22,7 +24,9 @@ namespace Data.Entity
 
         public string Email { get; set; }
 
-        public virtual AutherBankDetails BankDetails { set; get; }
+        public bool SuperAuther { get; set; }
+
+        public AutherBankDetails BankDetails { set; get; }
 
         public virtual ICollection<Story> stories { get; set; }
 

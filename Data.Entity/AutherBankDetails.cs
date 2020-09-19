@@ -14,7 +14,7 @@ namespace Data.Entity
 
         public string bankAccountNumber { get; set; }
 
-        public Auther auther { get; set; }
+        public virtual Auther auther { get; set; }
 
         public int autherId { get; set; }
     }
