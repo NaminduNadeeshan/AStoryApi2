@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Dto.Model;
 
 namespace Repository.CommonRepository
 {
     public interface IGenaricRepository<T> where T : class
     {
-        IEnumerable<T> GetAll(int skip, int take);
+        IEnumerable<T> GetAll();
 
         T GetById(int Id);
 

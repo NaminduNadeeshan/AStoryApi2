@@ -18,6 +18,8 @@ namespace Data.Entity
 
         public int storyId { get; set; }
 
+        public bool isActive { get; set; }
+
         public virtual Story story { get; set; }
     }
 }

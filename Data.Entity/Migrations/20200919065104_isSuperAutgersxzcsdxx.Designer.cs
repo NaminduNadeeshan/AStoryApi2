@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Entity.Migrations
 {
     [DbContext(typeof(AStoryDatabaseContext))]
-    [Migration("20200828043322_8888ssssddssss4z")]
-    partial class _8888ssssddssss4z
+    [Migration("20200919065104_isSuperAutgersxzcsdxx")]
+    partial class isSuperAutgersxzcsdxx
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.7")
+                .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -31,6 +31,9 @@ namespace Data.Entity.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
@@ -42,6 +45,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SuperAuther")
+                        .HasColumnType("bit");
 
                     b.HasKey("AutherId");
 
@@ -82,6 +88,9 @@ namespace Data.Entity.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("episodeContent")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("episodeCoverImageUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -90,6 +99,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("episodeShortDescription")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("storyId")
                         .HasColumnType("int");

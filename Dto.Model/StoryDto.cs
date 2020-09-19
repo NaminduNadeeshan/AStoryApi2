@@ -13,9 +13,9 @@ namespace Dto.Model
 
         public string coverImageUrl { get; set; }
 
-        public bool isActive { get; set; }
-
         public int autherId { get; set; }
+
+        public bool isActive { get; set; }
 
     }
 

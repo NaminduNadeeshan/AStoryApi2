@@ -10,20 +10,20 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Entity.Migrations
 {
     [DbContext(typeof(AStoryDatabaseContext))]
-    [Migration("20200828030801_8888ssssddsss")]
-    partial class _8888ssssddsss
+    [Migration("20200919072222_isSuperAutgersxzcsdxxddsdfdvd")]
+    partial class isSuperAutgersxzcsdxxddsdfdvd
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.7")
+                .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Data.Entity.Auther", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("AutherId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -31,8 +31,8 @@ namespace Data.Entity.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("AutherBankDetailId")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
@@ -46,20 +46,8 @@ namespace Data.Entity.Migrations
                     b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("AutherBankDetailId")
-                        .IsUnique();
-
-                    b.ToTable("Authers");
-                });
-
-            modelBuilder.Entity("Data.Entity.AutherBankDetails", b =>
-                {
-                    b.Property<int>("bankDetailsId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<bool>("SuperAuther")
+                        .HasColumnType("bit");
 
                     b.Property<string>("bankAccountNumber")
                         .HasColumnType("nvarchar(max)");
@@ -70,9 +58,9 @@ namespace Data.Entity.Migrations
                     b.Property<string>("branchName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("bankDetailsId");
+                    b.HasKey("AutherId");
 
-                    b.ToTable("AutherBankDetails");
+                    b.ToTable("Authers");
                 });
 
             modelBuilder.Entity("Data.Entity.Episode", b =>
@@ -82,6 +70,9 @@ namespace Data.Entity.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("episodeContent")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("episodeCoverImageUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -90,6 +81,9 @@ namespace Data.Entity.Migrations
 
                     b.Property<string>("episodeShortDescription")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
 
                     b.Property<int>("storyId")
                         .HasColumnType("int");
@@ -187,15 +181,6 @@ namespace Data.Entity.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("Data.Entity.Auther", b =>
-                {
-                    b.HasOne("Data.Entity.AutherBankDetails", "BankDetails")
-                        .WithOne("auther")
-                        .HasForeignKey("Data.Entity.Auther", "AutherBankDetailId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Data.Entity.Episode", b =>

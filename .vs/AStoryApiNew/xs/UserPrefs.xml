@@ -1,28 +1,41 @@
 ﻿<Properties StartupConfiguration="{427175D5-A6EC-4990-94A0-15A9773678AF}|AStoryApiNew">
   <MonoDevelop.Ide.ItemProperties.AStoryApiNew PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dto.Model/StoryApproveRequestDto.cs">
+    <Files>
+      <File FileName="Repository/StoryRepository/StoryRepository.cs" Line="27" Column="18" />
+      <File FileName="Services/StoryServices/StoryService.cs" Line="58" Column="1" />
+      <File FileName="AStoryApiNew/Controllers/Story/StoryController.cs" Line="60" Column="1" />
+      <File FileName="Dto.Model/StoryDto.cs" Line="6" Column="18" />
+      <File FileName="Services/StoryServices/IStotyService.cs" Line="15" Column="72" />
+      <File FileName="Repository/StoryRepository/IStoryRepository.cs" Line="14" Column="81" />
+      <File FileName="Repository/CommonRepository/GenaricRepository.cs" Line="83" Column="1" />
+      <File FileName="Repository/CommonRepository/IGenaricRepository.cs" Line="17" Column="28" />
+      <File FileName="AStoryApiNew/Startup.cs" Line="145" Column="87" />
+      <File FileName="Repository/EpisodeRepository/EpisodeRepository.cs" Line="24" Column="18" />
+      <File FileName="Repository/EpisodeRepository/IEpisodeRepository.cs" Line="10" Column="81" />
+      <File FileName="Services/EpisodeService/IEpisodeService.cs" Line="9" Column="71" />
+      <File FileName="Services/EpisodeService/EpisodeService.cs" Line="49" Column="64" />
+      <File FileName="AStoryApiNew/Program.cs" Line="7" Column="36" />
+      <File FileName="Dto.Model/StoryApproveRequestDto.cs" Line="12" Column="40" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AStoryApiNew" expanded="True">
             <Node name="AStoryApiNew" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="Authentication" expanded="True" />
-                <Node name="Auther" expanded="True" />
                 <Node name="Story" expanded="True" />
               </Node>
             </Node>
-            <Node name="Data.Entity" expanded="True" />
-            <Node name="Dto.Model" expanded="True" />
+            <Node name="Dto.Model" expanded="True">
+              <Node name="StoryApproveRequestDto.cs" selected="True" />
+            </Node>
             <Node name="Repository" expanded="True">
-              <Node name="StoryRepository" expanded="True">
-                <Node name="StoryRepository.cs" selected="True" />
-              </Node>
-              <Node name="UserRepository" expanded="True" />
+              <Node name="CommonRepository" expanded="True" />
+              <Node name="EpisodeRepository" expanded="True" />
+              <Node name="StoryRepository" expanded="True" />
             </Node>
             <Node name="Services" expanded="True">
-              <Node name="AuthenticationService" expanded="True" />
-              <Node name="AutherService" expanded="True" />
               <Node name="EpisodeService" expanded="True" />
               <Node name="StoryServices" expanded="True" />
             </Node>
@@ -32,9 +45,11 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/namindu/Desktop/AStoryApi2/AStoryApiNew/Controllers/Story/StoryController.cs" relfile="AStoryApiNew/Controllers/Story/StoryController.cs" line="60" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

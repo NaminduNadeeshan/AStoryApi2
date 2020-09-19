@@ -28,6 +28,7 @@ using Services.EpisodeService;
 using AutoMapper;
 using Services.AutherService;
 using Repository.AutherRepository;
+using Repository.EpisodeRepository;
 
 namespace AStoryApiNew
 {
@@ -141,6 +142,7 @@ namespace AStoryApiNew
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
             services.AddScoped(typeof(IStoryRepository), typeof(StoryRepository));
             services.AddScoped(typeof(IAutherRepository), typeof(AutherRepository));
+            services.AddScoped(typeof(IEpisodeRepository), typeof(EpisodeRepository));
         }
 
         protected virtual void SwaggerRegister(IServiceCollection services)

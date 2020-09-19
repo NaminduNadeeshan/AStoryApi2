@@ -2,7 +2,7 @@
 
 namespace Data.Entity.Migrations
 {
-    public partial class _8888ssss : Migration
+    public partial class isSuperAutgersxzcsdxxddsdfdv : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

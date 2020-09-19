@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Data.Entity;
+using Dto.Model;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Repository.CommonRepository
@@ -17,6 +19,7 @@ namespace Repository.CommonRepository
             _context = context;
             _table = context.Set<T>();
         }
+
 
         public int Delete(int item)
         {
@@ -34,9 +37,9 @@ namespace Repository.CommonRepository
 
         }
 
-        public IEnumerable<T> GetAll(int skip, int take)
+        public IEnumerable<T> GetAll()
         {
-            return _table.Skip(skip).Take(take).ToList();
+            return _table;
         }
 
         public T GetById(int Id)
@@ -49,10 +52,10 @@ namespace Repository.CommonRepository
             try
             {
                 _table.Add(item);
-                Save();
+                _context.SaveChanges();
                 return item;
             }
-            catch (Exception e)
+            catch (SqlException e)
             {
                 throw e;
             }
@@ -62,6 +65,7 @@ namespace Repository.CommonRepository
         {
             _context.SaveChanges();
         }
+
 
         public T Update(T item)
         {
